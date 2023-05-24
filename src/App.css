@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+h1 {
+  font-family: "Amatic SC", cursive;
+  color: #fa5faa;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+button {
+  cursor: pointer;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .logoContainer {
+    display: none;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headerNavLinks {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.heroSection {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(243, 243, 243);
+  padding: 30px 0px 40px;
+}
+
+.heroSection button {
+  width: 370px;
+  font-size: 1.1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: "Josefin Sans", sans-serif;
+  padding-top: 15px;
+}
+
+.heroOrderButton {
+  background-color: #8ff5c4;
+}
+
+.heroMessageButton {
+  background-color: #fa5faa;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heroSection p {
+  margin: 10px 0 10px;
 }
