@@ -8,10 +8,12 @@ h1 {
 p {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.1rem;
+  font-weight: 200;
 }
 
 button {
   cursor: pointer;
+  border: none;
 }
 
 .logoContainer {
@@ -45,7 +47,6 @@ button {
   width: 370px;
   font-size: 1.1rem;
   padding: 10px;
-  border: none;
   border-radius: 7px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   font-family: "Josefin Sans", sans-serif;
@@ -63,4 +64,246 @@ button {
 
 .heroSection p {
   margin: 10px 0 10px;
+}
+
+/*HomeMenuSection*/
+
+.homeMenu {
+  margin-bottom: 25px;
+}
+
+.collectionContainer {
+  justify-content: center;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 30vw);
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .collection-container {
+    grid-template-columns: repeat(2, 45vw);
+  }
+}
+
+@media (max-width: 400px) {
+  .collection-container {
+    grid-template-columns: repeat(1, 90vw);
+  }
+}
+
+.collection {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border: 10px solid #fff;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.collection a {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.collectionOverlay {
+  transition: all 0.5s;
+}
+
+.collection a:hover .collectionOverlay {
+  transform: translateY(0);
+  transform: scale(1.1);
+}
+
+.collection:hover > img {
+  transform: scale(1.1);
+  opacity: 75%;
+}
+
+.collection > img {
+  transition: 0.2s linear;
+}
+
+.collection:hover span .browse {
+  opacity: 1;
+}
+
+.collectionOverlay {
+  width: 100%;
+  transform: translateY(25%);
+}
+
+.labelPreload {
+  margin: 0;
+  margin-bottom: 20px;
+  color: black;
+  background-color: rgb(255, 255, 255, 0.75);
+  padding: 5px;
+}
+
+.browse {
+  font-family: "Josefin Sans", sans-serif;
+  border-radius: 7px;
+  opacity: 0;
+  background-color: rgb(255, 255, 255, 0.75);
+  padding: 5px;
+  font-weight: bold;
+  color: black;
+}
+
+/*footer*/
+
+footer {
+  position: relative;
+  border-top: 1px solid rgb(221, 221, 221);
+  height: 100px;
+  width: 100%;
+  color: rgb(108, 108, 108);
+  background-color: rgb(245, 245, 245);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.footer-links div {
+  margin: 0 20%;
+}
+
+.footer-icons a {
+  padding: 0 10px;
+  font-size: 24px;
+  letter-spacing: 0.8;
+  color: black;
+}
+
+.footer-icons .fa-instagram {
+  color: rgb(0, 0, 0);
+}
+
+.fa-phone {
+  font-size: 20px;
+}
+
+.insta-gallery-buttons-container {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.insta-gallery-buttons-container button {
+  margin: 10px;
+  width: 50%;
+  padding: 10px;
+}
+
+/*Menu Item Component*/
+
+/*testing*/
+
+.menuItemImageGallery {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
+
+.menuItemImageGallery img {
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+}
+
+.menuItemContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px;
+}
+@media (max-width: 500px) {
+  .menuItemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuItemContainerRight {
+    margin-top: 25px;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menuItemContainerLeft {
+    padding-right: 0;
+  }
+}
+
+.menuItemContainerLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: solid black 2px; */
+  width: 50%;
+  min-width: 250px;
+}
+
+.menuItemLeftButtonsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuItemLeftButtonsContainer button {
+  width: 100%;
+  padding: 4px;
+  margin: 5px;
+  background-color: #fa5faa;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 1.1px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.menuItemContainerRight {
+  /* border: solid black 2px; */
+  /* width: 50%; */
+  padding: 0 25px;
+  min-width: 250px;
+}
+
+.menuItemContainerRight button {
+  width: 100%;
+  height: 40px;
+  background-color: #8ff5c4;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+}
+
+.price {
+  font-weight: 400;
+  margin-bottom: 25px;
 }
