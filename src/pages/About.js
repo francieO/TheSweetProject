@@ -11,7 +11,7 @@ export default function About() {
       <HeaderNav />
       <div class="aboutContent">
         <div class="aboutText">
-          <h1>About The Sweet Project</h1>
+          <h1 className="title">About The Sweet Project</h1>
           <hr />
           <p>
             Hi, my name is Carla Pereira and I am the owner of The Sweet

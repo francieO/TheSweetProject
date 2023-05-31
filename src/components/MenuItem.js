@@ -71,7 +71,7 @@ export default function MenuItem(props) {
           </div>
         </div>
         <div className="menuItemContainerRight">
-          <h1>{props.title}</h1>
+          <h1 className="title">{props.title}</h1>
           <div className="price">{props.price}</div>
           <div className="menuIDescription">{props.description}</div>
           <Link to="/order">

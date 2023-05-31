@@ -46,7 +46,7 @@ export default function CakeGallery() {
       <HeaderLogo />
       <HeaderNav />
       <div className="galleryContainer">
-        <h1>Cake Gallery</h1>
+        <h1 className="title">Cake Gallery</h1>
         <div className="imageContainer"> {imgElements}</div>
 
         {/* Image popup */}

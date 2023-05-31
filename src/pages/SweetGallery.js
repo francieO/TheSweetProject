@@ -109,7 +109,7 @@ export default function SweetGallery() {
       <HeaderLogo />
       <HeaderNav />
       <div className="galleryContainer">
-        <h1>Sweet Gallery</h1>
+        <h1 className="title">Sweet Gallery</h1>
         <div className="imageContainer"> {imgElements}</div>
 
         {/* Image popup */}
