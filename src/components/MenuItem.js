@@ -56,7 +56,10 @@ export default function MenuItem(props) {
           </div>
           <p style={{ textAlign: "center", marginBottom: "0" }}>See More:</p>
           <div className="menuItemLeftButtonsContainer">
-            <button>GALLERY</button>
+            <Link to="/order">
+              <button>GALLERY</button>
+            </Link>
+
             <a
               href="https://www.instagram.com/the.sweet.project/"
               target="_blank"

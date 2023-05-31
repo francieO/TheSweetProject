@@ -18,10 +18,10 @@ export default function Order() {
           until they are paid in full or a 50% deposit has been made. Remaining
           balance must be paid the day of delivery. <br></br>
           <br></br>{" "}
-          <p>
+          <span>
             **Unfortunately I cannot provide nut-free, sugar free, or gluten
             free products.
-          </p>
+          </span>
         </p>
         <h1>Refunds & Cancellations</h1>
         <p>
@@ -38,8 +38,8 @@ export default function Order() {
           cookies only, within the US.
         </p>
 
-        <div class="contact-method">
-          <i class="fa-solid fa-phone"></i>
+        <div className="contact-method">
+          <i className="fa-solid fa-phone"></i>
           <a href="tel:3476364552"> 347-636-4552</a>
         </div>
       </section>
