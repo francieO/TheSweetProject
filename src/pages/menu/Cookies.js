@@ -6,12 +6,6 @@ import img2 from "../../images/gallery/IMG_6445.jpg";
 import img3 from "../../images/gallery/IMG_6450.jpg";
 
 const description = (
-  // <ul>
-  //   {" "}
-  //   <li>Choice of chocolate or vanilla cookie</li>{" "}
-  //   <li>Wrapped in cellophane bag</li>
-  //   <li>Add ribbon and a tag for $1</li>
-  // </ul>
   <div>
     {" "}
     <p>Choice of chocolate or vanilla cookie</p>
@@ -25,7 +19,6 @@ export default function Cookies() {
       <MenuItem
         title="Custom Cookies"
         price="Starting at $5 each (minimum one dozen)"
-        // description="Choice of chocolate or vanilla cookie. Cookies come wrapped in cellophane bag. Add ribbon and tag for $1."
         description={description}
         image={largeCookiesimg}
         galleryImg1={img1}

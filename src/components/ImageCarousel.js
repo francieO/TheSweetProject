@@ -6,11 +6,7 @@ const ImageCarousel = ({ images, interval }) => {
     <Carousel interval={interval}>
       {images.map((image, index) => (
         <Carousel.Item key={index}>
-          <img
-            className="d-block w-100"
-            src={image}
-            alt={`Image ${index + 1}`}
-          />
+          <img className="d-block w-100" src={image} alt="sweetGallery" />
         </Carousel.Item>
       ))}
     </Carousel>

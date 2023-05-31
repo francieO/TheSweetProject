@@ -14,6 +14,7 @@ import cupcakeImg from "../images/cupcakes.jpeg";
 import cakeciclesImg from "../images/cakecicles.jpeg";
 import cakepopImg from "../images/cakepops.jpeg";
 import artesanalCookieImg from "../images/3.jpeg";
+import Footer from "../components/Footer";
 
 const images = [img1, img2, img3];
 
@@ -32,18 +33,22 @@ export default function HomePage() {
           <button className="heroOrderButton">PLACE ORDER</button>
         </Link>
         <p>or</p>
-        <a href="https://www.instagram.com/the.sweet.project/">
+        <a
+          href="https://www.instagram.com/the.sweet.project/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button className="heroMessageButton">
             MESSAGE ME ON INSTAGRAM!
           </button>
         </a>
       </section>
 
-      <section className="home-menu">
+      <section className="homeMenu">
         <div className="collectionContainer">
           <div className="collection">
             <img src={cookiesImg} alt="" />
-            <Link to="/menu-items/cookies">
+            <Link to="/menu/cookies">
               <span className="collectionOverlay">
                 <h1 className="labelPreload">
                   CUSTOM
@@ -56,7 +61,7 @@ export default function HomePage() {
           </div>
           <div className="collection">
             <img src={macaronsImg} alt="" />
-            <Link to="/menu-items/macarons">
+            <Link to="/menu/macarons">
               <span className="collectionOverlay">
                 <h1 className="labelPreload">MACARONS</h1>
                 <span className="browse">BROWSE</span>
@@ -65,7 +70,7 @@ export default function HomePage() {
           </div>
           <div className="collection">
             <img src={brigadeirosImg} alt="" />
-            <Link to="/menu-items/brigadeiros">
+            <Link to="/menu/brigadeiros">
               <span className="collectionOverlay">
                 <h1 className="labelPreload">BRIGADEIROS</h1>
                 <span className="browse">BROWSE</span>
@@ -74,16 +79,16 @@ export default function HomePage() {
           </div>
           <div class="collection">
             <img src={cakeImg} alt="" />
-            <Link to="/menu-items/cakes">
+            <Link to="/menu/cakes">
               <span className="collectionOverlay">
-                <h1 className="labelPreload">CAKES</h1>
+                <h1 className="labelPreload">CUSTOM CAKES</h1>
                 <span className="browse">BROWSE</span>
               </span>
             </Link>
           </div>
           <div class="collection">
             <img src={cupcakeImg} alt="" />
-            <Link to="/menu-items/cupcakes">
+            <Link to="/menu/cupcakes">
               <span className="collectionOverlay">
                 <h1 className="labelPreload">CUPCAKES</h1>
                 <span className="browse">BROWSE</span>
@@ -92,7 +97,7 @@ export default function HomePage() {
           </div>
           <div class="collection">
             <img src={cakeciclesImg} alt="" />
-            <Link to="/menu-items/cakecicles">
+            <Link to="/menu/cakecicles">
               <span className="collectionOverlay">
                 <h1 className="labelPreload">CAKECICLES</h1>
                 <span className="browse">BROWSE</span>
@@ -102,7 +107,7 @@ export default function HomePage() {
 
           <div class="collection">
             <img src={cakepopImg} alt="" />
-            <Link to="/menu-items/cakepops">
+            <Link to="/menu/cakepops">
               <span className="collectionOverlay">
                 <h1 className="labelPreload">CAKEPOPS</h1>
                 <span className="browse">BROWSE</span>
@@ -111,7 +116,7 @@ export default function HomePage() {
           </div>
           <div class="collection">
             <img src={artesanalCookieImg} alt="" />
-            <Link to="/menu-items/artesanal">
+            <Link to="/menu/artesanal">
               <span className="collectionOverlay">
                 <h1 className="labelPreload">
                   ARTESANAL <br /> COOKIE JARS
@@ -122,21 +127,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <footer>
-        <div class="footer-links">
-          <div class="footer-icons">
-            GET IN TOUCH <br />
-            <a href="https://www.instagram.com/the.sweet.project/">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="tel:3476364552">
-              {" "}
-              <i class="fa-solid fa-phone"></i>
-            </a>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

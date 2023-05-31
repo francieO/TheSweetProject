@@ -18,43 +18,44 @@ function HeaderNav() {
             </Nav.Link>
 
             <NavDropdown title="MENU" id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/cakes">
-                CAKES
+              <NavDropdown.Item as={Link} to="/menu/customCookies">
+                CUSTOM COOKIES
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/decorated-cookies">
-                DECORATED COOKIES
-              </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/macarons">
+              <NavDropdown.Item as={Link} to="/menu/macarons">
                 MACARONS
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/brigadeiros">
+              <NavDropdown.Item as={Link} to="/menu/brigadeiros">
                 BRIGADEIROS
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/cupcakes">
+              <NavDropdown.Item as={Link} to="/menu/cupcakes">
                 CUPCAKES
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/cakecicles">
+              <NavDropdown.Item as={Link} to="/menu/cakecicles">
                 CAKECICLES
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/cakepops">
+              <NavDropdown.Item as={Link} to="/menu/cakepops">
                 CAKEPOPS
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/cookie-jars">
+              <NavDropdown.Item as={Link} to="/menu/artesenalcookiejars">
                 ARTESANAL COOKIE JARS
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item as={Link} to="/menu/cakes">
+                CUSTOM CAKES
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="GALLERY" id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/sweet-gallery">
+              <NavDropdown.Item as={Link} to="/menu/sweet-gallery">
                 SWEET GALLERY
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/cake-gallery">
+              <NavDropdown.Item as={Link} to="/menu/cake-gallery">
                 CAKE GALLERY
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/about">
               ABOUT
             </Nav.Link>
-            <Nav.Link as={Link} to="/contact">
+            <Nav.Link as={Link} to="/order">
               ORDER
             </Nav.Link>
           </Nav>
