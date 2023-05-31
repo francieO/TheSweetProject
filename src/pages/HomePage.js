@@ -77,7 +77,7 @@ export default function HomePage() {
               </span>
             </Link>
           </div>
-          <div class="collection">
+          <div className="collection">
             <img src={cakeImg} alt="" />
             <Link to="/menu/cakes">
               <span className="collectionOverlay">
@@ -86,7 +86,7 @@ export default function HomePage() {
               </span>
             </Link>
           </div>
-          <div class="collection">
+          <div className="collection">
             <img src={cupcakeImg} alt="" />
             <Link to="/menu/cupcakes">
               <span className="collectionOverlay">
@@ -95,7 +95,7 @@ export default function HomePage() {
               </span>
             </Link>
           </div>
-          <div class="collection">
+          <div className="collection">
             <img src={cakeciclesImg} alt="" />
             <Link to="/menu/cakecicles">
               <span className="collectionOverlay">
@@ -105,7 +105,7 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <div class="collection">
+          <div className="collection">
             <img src={cakepopImg} alt="" />
             <Link to="/menu/cakepops">
               <span className="collectionOverlay">
@@ -114,7 +114,7 @@ export default function HomePage() {
               </span>
             </Link>
           </div>
-          <div class="collection">
+          <div className="collection">
             <img src={artesanalCookieImg} alt="" />
             <Link to="/menu/artesanal">
               <span className="collectionOverlay">
