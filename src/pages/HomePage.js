@@ -26,7 +26,9 @@ export default function HomePage() {
       <ImageCarousel interval="3000" images={images} />
       <section className="heroSection">
         <h1>Handmade. Custom. Delicious.</h1>
-        <br />
+        <br></br>
+
+        {/* <HeaderLogo /> */}
         <p>LOCAL DELIVERY AVAILABLE IN THE TRIANGLE AREA</p>
         <br />
         <Link to="/order">
