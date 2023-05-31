@@ -36,11 +36,13 @@ button {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
 }
 
 @media (max-width: 400px) {
   .headerNavLinks {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
