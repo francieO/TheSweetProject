@@ -9,7 +9,7 @@ export default function Order() {
       <HeaderLogo />
       <HeaderNav />
       <section className="contactContainer">
-        <h1>Ordering</h1>
+        <h1 className="title">Ordering</h1>
         <p>
           {" "}
           Please contact me by phone, text, or whatsapp :
@@ -23,14 +23,14 @@ export default function Order() {
             free products.
           </span>
         </p>
-        <h1>Refunds & Cancellations</h1>
+        <h1 className="title">Refunds & Cancellations</h1>
         <p>
           I am able to refund and cancel your order up to 14 days prior to your
           pickup date. No refunds will be given for any products that have
           already been made.{" "}
         </p>
 
-        <h1>Pickup & Delivery</h1>
+        <h1 className="title">Pickup & Delivery</h1>
         <p>
           {" "}
           My products are for local pickup in Cary NC. Delivery available in the

@@ -25,7 +25,7 @@ export default function HomePage() {
       <HeaderNav />
       <ImageCarousel interval="3000" images={images} />
       <section className="heroSection">
-        <h1>Handmade. Custom. Delicious.</h1>
+        <h1 className="homeTitle">Handmade. Custom. Delicious.</h1>
         <br></br>
 
         {/* <HeaderLogo /> */}
