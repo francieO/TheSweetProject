@@ -1,13 +1,18 @@
+:root {
+  --pink-primary: #fa5faa;
+  --green-primary: #8ff5c4;
+}
+
 h1 {
   font-family: "Amatic SC", cursive;
-  color: #fa5faa;
+  color: var(--pink-primary);
   letter-spacing: 2px;
   font-weight: 700;
 }
 
 p {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.1rem;
+  font-size: 20px;
   font-weight: 300;
 }
 
@@ -17,12 +22,13 @@ button {
 }
 
 .title {
-  font-size: 2.5rem;
-  color: #fa5faa;
+  font-size: 40px;
+  color: var(--pink-primary);
 }
 
 .homeTitle {
-  color: #fa5faa;
+  color: var(--pink-primary);
+  font-size: 40px;
 }
 
 .logoContainerMain {
@@ -39,7 +45,8 @@ button {
 
 .headerNavLinks {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 8px;
   width: 100%;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
@@ -47,7 +54,7 @@ button {
 
 @media (max-width: 400px) {
   .headerNavLinks {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -63,7 +70,7 @@ button {
 
 .heroSection button {
   width: 370px;
-  font-size: 1.1rem;
+  font-size: 20px;
   padding: 10px;
   border-radius: 7px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
@@ -72,16 +79,16 @@ button {
 }
 
 .heroOrderButton {
-  background-color: #8ff5c4;
+  background-color: var(--green-primary);
   font-weight: 300;
   color: black;
 }
 
 .heroMessageButton {
-  background-color: #fa5faa;
+  background-color: var(--pink-primary);
   color: white;
-  letter-spacing: 1px;
-  font-weight: 300;
+  /* letter-spacing: 1.1; */
+  font-weight: 400;
 }
 
 .heroSection p {
@@ -176,7 +183,7 @@ button {
   color: black;
   background-color: rgb(255, 255, 255, 0.75);
   padding: 5px;
-  font-size: 2.5rem;
+  font-size: 40px;
 }
 
 .browse {
@@ -188,6 +195,10 @@ button {
   color: black;
   padding-top: 8px;
 }
+
+/* .menuIDescription {
+  text-align: left;
+} */
 
 /*footer*/
 
@@ -262,6 +273,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  column-gap: 70px;
   margin: 50px;
 }
 @media (max-width: 500px) {
@@ -298,12 +310,12 @@ footer {
 
 .menuItemLeftButtonsContainer button {
   width: 120px;
-  padding: 6px;
+  height: 40px;
   margin: 5px;
   margin-bottom: 25px;
-  background-color: #fa5faa;
+  background-color: var(--pink-primary);
   color: white;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: 1.1px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -316,7 +328,7 @@ footer {
 .menuItemContainerRight button {
   width: 100%;
   height: 40px;
-  background-color: #8ff5c4;
+  background-color: var(--green-primary);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   letter-spacing: 1px;
 }

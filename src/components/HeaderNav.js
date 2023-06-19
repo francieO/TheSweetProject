@@ -8,7 +8,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 function HeaderNav() {
   return (
     <Navbar bg="light">
-      <Container>
+      <Container className="navBarContainer">
         {/* <Navbar.Brand href="#home">The Sweet Project</Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -19,37 +19,37 @@ function HeaderNav() {
 
             <NavDropdown title="MENU" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/menu/customCookies">
-                CUSTOM COOKIES
+                Custom Cookies
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/menu/macarons">
-                MACARONS
+                Macarons
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/menu/brigadeiros">
-                BRIGADEIROS
+                Brigadeiros
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/menu/cupcakes">
-                CUPCAKES
+                Cupcakes
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/menu/cakecicles">
-                CAKECICLES
+                Cakecicles
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/menu/cakepops">
-                CAKEPOPS
+                Cakepops
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/menu/artesenalcookiejars">
-                ARTESANAL COOKIE JARS
+                Artesenal Cookie Jars
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item as={Link} to="/menu/cakes">
-                CUSTOM CAKES
+                Custom Cakes
               </NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="GALLERY" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/menu/sweet-gallery">
-                SWEET GALLERY
+                Sweet Gallery
               </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/menu/cake-gallery">
-                CAKE GALLERY
+                Cake Gallery
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/about">

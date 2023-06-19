@@ -54,7 +54,7 @@ export default function MenuItem(props) {
               ></img>
             )}
           </div>
-          <p style={{ textAlign: "center", marginBottom: "0" }}>See More:</p>
+          <p style={{ textAlign: "center", marginBottom: "0" }}>See more:</p>
           <div className="menuItemLeftButtonsContainer">
             <Link to="/order">
               <button>GALLERY</button>
