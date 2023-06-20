@@ -28,7 +28,16 @@ button {
 
 .homeTitle {
   color: var(--pink-primary);
-  font-size: 40px;
+  font-size: 60px;
+}
+
+@media (max-width: 600px) {
+  .homeTitle {
+    font-size: 40px;
+  }
+  .heroSection p {
+    font-size: 16px;
+  }
 }
 
 .logoContainerMain {
@@ -36,12 +45,6 @@ button {
   justify-content: center;
   align-items: center;
 }
-
-/* @media (max-width: 800px) {
-  .logoContainer {
-    display: none;
-  }
-} */
 
 .headerNavLinks {
   display: flex;
@@ -87,7 +90,6 @@ button {
 .heroMessageButton {
   background-color: var(--pink-primary);
   color: white;
-  /* letter-spacing: 1.1; */
   font-weight: 400;
 }
 
@@ -195,10 +197,6 @@ button {
   color: black;
   padding-top: 8px;
 }
-
-/* .menuIDescription {
-  text-align: left;
-} */
 
 /*footer*/
 
@@ -401,7 +399,6 @@ footer {
   flex-wrap: wrap;
   gap: 5px;
   justify-content: center;
-  /* padding: 5px; */
 }
 
 .galleryContainer .imageContainer .image {
