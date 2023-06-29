@@ -13,10 +13,6 @@ function HeaderNav() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto headerNavLinks">
-            <Nav.Link as={Link} to="/">
-              HOME
-            </Nav.Link>
-
             <NavDropdown title="MENU" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/menu/customCookies">
                 Custom Cookies

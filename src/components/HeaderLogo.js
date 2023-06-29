@@ -1,10 +1,14 @@
 import React from "react";
 import logo from "../images/logotspfull.png";
+import { Link } from "react-router-dom";
 
 export default function HeaderLogo() {
   return (
     <div className="logoContainerMain">
-      <img src={logo} alt="Logo" style={{ width: "150px" }} />
+      <Link to="/">
+        {" "}
+        <img src={logo} alt="Logo" />
+      </Link>
     </div>
   );
 }
