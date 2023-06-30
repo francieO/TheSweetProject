@@ -38,7 +38,7 @@ function App() {
       <Route path="/menu/sweet-gallery" element={<SweetGallery />} />
       <Route path="/menu/cake-gallery" element={<CakeGallery />} />
       <Route
-        path="/menu/artesenalcookiejars"
+        path="/menu/artesenalCookieJars"
         element={<ArtesenalCookieJars />}
       />
       <Route path="/menu/cakes" element={<Cakes />} />

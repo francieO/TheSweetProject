@@ -32,7 +32,7 @@ function HeaderNav() {
               <NavDropdown.Item as={Link} to="/menu/cakepops">
                 Cakepops
               </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/menu/artesenalcookiejars">
+              <NavDropdown.Item as={Link} to="/menu/artesenalCookieJars">
                 Artesenal Cookie Jars
               </NavDropdown.Item>
               <NavDropdown.Divider />

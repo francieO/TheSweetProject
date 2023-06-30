@@ -118,7 +118,7 @@ export default function HomePage() {
           </div>
           <div className="collection">
             <img src={artesanalCookieImg} alt="" />
-            <Link to="/menu/artesanal">
+            <Link to="/menu/artesenalCookieJars">
               <span className="collectionOverlay">
                 <h1 className="labelPreload">
                   ARTESANAL <br /> COOKIE JARS
